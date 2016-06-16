@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="ShopInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="美酒美食1logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-VD-itN">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乐帆F1 PPT翻页笔 演讲演示器电子教鞭 多媒体教学遥控笔..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8p-mU-AYR">
+                        <rect key="frame" x="116" y="17" width="196" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="vMC-5P-Fmq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥99.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-b0-gfz">
+                        <rect key="frame" x="116" y="74" width="82" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.85649671049999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_solid.png" translatesAutoresizingMaskIntoConstraints="NO" id="phJ-uT-Ld3">
+                        <rect key="frame" x="0.0" y="115" width="320" height="1"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e8p-mU-AYR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="F5e-Rd-hm3"/>
+                    <constraint firstItem="e8p-mU-AYR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="108" id="Wl4-eQ-CLe"/>
+                    <constraint firstItem="e8p-mU-AYR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rdd-UF-Rd9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsInfoImage" destination="eYT-VD-itN" id="t3C-72-WWN"/>
+                <outlet property="goodsInfoName" destination="e8p-mU-AYR" id="cu2-WK-gfE"/>
+                <outlet property="goodsInfoPrice" destination="Hfx-b0-gfz" id="Ruq-Pu-s98"/>
+            </connections>
+            <point key="canvasLocation" x="342" y="215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line_solid.png" width="640" height="2"/>
+        <image name="美酒美食1logo.jpg" width="500" height="500"/>
+    </resources>
+</document>

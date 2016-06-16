@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePwdViewController">
+            <connections>
+                <outlet property="_tfBeforePwd" destination="kFa-JX-hsx" id="d1i-4y-Dz2"/>
+                <outlet property="_tfNewPwd" destination="EQw-Ml-6FP" id="7iu-bh-mkZ"/>
+                <outlet property="_tfSurePwd" destination="gNg-mn-eeU" id="4wp-9M-jcc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q3U-TL-qPW">
+                    <rect key="frame" x="7" y="65" width="306" height="145"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="qjl-zj-q5K"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入原来密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFa-JX-hsx">
+                    <rect key="frame" x="15" y="76" width="290" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入新密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQw-Ml-6FP">
+                    <rect key="frame" x="15" y="123" width="290" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esm-jY-HJp">
+                    <rect key="frame" x="8" y="278" width="304" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="jS6-bk-IdT"/>
+                    </constraints>
+                    <state key="normal" title="确定修改" backgroundImage="login_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="SureChange:" destination="-1" eventType="touchUpInside" id="k6I-gf-AMM"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认新密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-mn-eeU">
+                    <rect key="frame" x="15" y="172" width="290" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Q3U-TL-qPW" secondAttribute="trailing" constant="7" id="2Gt-fO-ebE"/>
+                <constraint firstItem="Q3U-TL-qPW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="C3e-X6-sKC"/>
+                <constraint firstItem="esm-jY-HJp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="278" id="ZTb-S3-Ce8"/>
+                <constraint firstItem="Q3U-TL-qPW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="7" id="hsR-sU-OFb"/>
+                <constraint firstItem="esm-jY-HJp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="peO-U7-IZ5"/>
+                <constraint firstAttribute="trailing" secondItem="esm-jY-HJp" secondAttribute="trailing" constant="8" id="ykD-yY-SG2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_btn.png" width="612" height="70"/>
+        <image name="register_bg.png" width="612" height="290"/>
+    </resources>
+</document>

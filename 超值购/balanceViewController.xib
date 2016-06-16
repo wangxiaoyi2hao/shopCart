@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="balanceViewController">
+            <connections>
+                <outlet property="_tfBalance" destination="MMc-Yi-8YK" id="rC6-Lx-ZII"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_input_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="MC7-SN-Nl1">
+                    <rect key="frame" x="22" y="64" width="277" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="PcX-M8-rpn"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入充值金额" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MMc-Yi-8YK">
+                    <rect key="frame" x="25" y="69" width="271" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRg-1u-ae0">
+                    <rect key="frame" x="8" y="222" width="304" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Beg-M8-Zzc"/>
+                    </constraints>
+                    <state key="normal" title="确定" backgroundImage="login_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureBalance:" destination="-1" eventType="touchUpInside" id="oBH-i5-QPa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MC7-SN-Nl1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="FSJ-zm-tH5"/>
+                <constraint firstItem="MC7-SN-Nl1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="TTa-MB-yr1"/>
+                <constraint firstAttribute="trailing" secondItem="sRg-1u-ae0" secondAttribute="trailing" constant="8" id="fOU-wr-43F"/>
+                <constraint firstItem="sRg-1u-ae0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="lnt-bp-cgS"/>
+                <constraint firstAttribute="trailing" secondItem="MC7-SN-Nl1" secondAttribute="trailing" constant="21" id="nkl-5l-Wea"/>
+                <constraint firstItem="sRg-1u-ae0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="222" id="uPP-Nx-PQq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_btn.png" width="612" height="70"/>
+        <image name="login_input_bg.png" width="584" height="72"/>
+    </resources>
+</document>

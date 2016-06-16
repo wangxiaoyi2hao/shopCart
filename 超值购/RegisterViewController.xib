@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="_tfAccount" destination="hNR-vg-Zfb" id="d50-nm-i4j"/>
+                <outlet property="_tfPwd" destination="AJc-oj-ycr" id="ujM-sH-f5v"/>
+                <outlet property="_tfSurePwd" destination="4gE-EW-FJZ" id="4x1-6t-EGH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_input_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-zw-ZmJ">
+                    <rect key="frame" x="8" y="154" width="304" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="AP5-WS-lgL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_input_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-Vy-V0k">
+                    <rect key="frame" x="8" y="201" width="304" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="gwh-j0-Hrc"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJc-oj-ycr">
+                    <rect key="frame" x="18" y="210" width="285" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Se7-xH-cLv"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_input_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybN-ON-TAS">
+                    <rect key="frame" x="8" y="248" width="304" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="7Uw-Cb-Egf"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4gE-EW-FJZ">
+                    <rect key="frame" x="18" y="257" width="285" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Q9l-Wb-waU"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNR-vg-Zfb">
+                    <rect key="frame" x="18" y="163" width="285" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Zhj-x3-vYN"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-fe-RMc">
+                    <rect key="frame" x="8" y="363" width="304" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="q4y-iq-zht"/>
+                    </constraints>
+                    <state key="normal" title="注册" backgroundImage="login_btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="05x-WD-PwG"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="En9-Oh-qHA">
+                    <rect key="frame" x="105" y="24" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="ajz-iE-9Yb"/>
+                        <constraint firstAttribute="width" constant="100" id="fjl-nH-lCj"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.91086847217459432" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ya4-zw-ZmJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="154" id="3dJ-zc-chM"/>
+                <constraint firstItem="ybN-ON-TAS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="248" id="5rE-r9-JER"/>
+                <constraint firstItem="ybN-ON-TAS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7Tz-SI-mH4"/>
+                <constraint firstAttribute="centerX" secondItem="fmD-fe-RMc" secondAttribute="centerX" id="8sY-dT-Hq6"/>
+                <constraint firstItem="En9-Oh-qHA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="9tY-ts-OSy"/>
+                <constraint firstItem="Ya4-zw-ZmJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="BbG-oV-J8k"/>
+                <constraint firstAttribute="centerX" secondItem="ybN-ON-TAS" secondAttribute="centerX" id="BkX-JU-iMn"/>
+                <constraint firstAttribute="trailing" secondItem="FOS-Vy-V0k" secondAttribute="trailing" constant="8" id="FvK-zG-XX0"/>
+                <constraint firstItem="FOS-Vy-V0k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="H2E-ZA-VOR"/>
+                <constraint firstAttribute="centerX" secondItem="En9-Oh-qHA" secondAttribute="centerX" constant="5" id="J9b-e4-xiH"/>
+                <constraint firstItem="fmD-fe-RMc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="363" id="Qqd-NS-On6"/>
+                <constraint firstAttribute="centerX" secondItem="Ya4-zw-ZmJ" secondAttribute="centerX" id="T1d-CY-xzs"/>
+                <constraint firstItem="fmD-fe-RMc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="U7V-D7-wON"/>
+                <constraint firstAttribute="centerX" secondItem="FOS-Vy-V0k" secondAttribute="centerX" id="W1t-E4-R2Q"/>
+                <constraint firstAttribute="trailing" secondItem="Ya4-zw-ZmJ" secondAttribute="trailing" constant="8" id="bQh-so-mhx"/>
+                <constraint firstAttribute="trailing" secondItem="fmD-fe-RMc" secondAttribute="trailing" constant="8" id="mkl-4A-UnH"/>
+                <constraint firstItem="FOS-Vy-V0k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="201" id="rqM-S2-JEh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_btn.png" width="612" height="70"/>
+        <image name="login_icon.png" width="180" height="180"/>
+        <image name="login_input_bg.png" width="584" height="72"/>
+    </resources>
+</document>
